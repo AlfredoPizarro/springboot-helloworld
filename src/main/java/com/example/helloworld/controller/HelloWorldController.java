@@ -9,8 +9,9 @@ public class HelloWorldController {
 
     @GetMapping("/hello")
     public String sendGreetings() {
-        LocalDate today = LocalDate.now();  
-        System.out.println(today);
-        return today;
+       Locale locale = Locale.getDefault();
+       String lang = locale.getDisplayLanguage();
+       String country = locale.getDisplayCountry();
+        return locale;
     }
 }
