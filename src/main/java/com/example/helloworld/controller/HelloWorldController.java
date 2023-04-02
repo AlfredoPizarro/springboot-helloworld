@@ -11,6 +11,6 @@ public class HelloWorldController {
     public String sendGreetings() {
         LocalDate today = LocalDate.now();  
         System.out.println(today);
-        return "Hello, World!, Hello, today";
+        return today;
     }
 }
