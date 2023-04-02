@@ -13,6 +13,6 @@ public class HelloWorldController {
        Locale locale = Locale.getDefault();
        String lang = locale.getDisplayLanguage();
        String country = locale.getDisplayCountry();
-        return locale;
+        return country;
     }
 }
