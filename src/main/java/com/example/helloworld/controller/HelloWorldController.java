@@ -13,6 +13,8 @@ public class HelloWorldController {
     public String sendGreetings() {
      Locale locale = Locale.getDefault();
      String lang = locale.getDisplayLanguage();
-        return "Current language:" + lang;
+     LocalDateTime now = LocalDateTime.now(); 
+     String strDate = dateFormat.format(now);  
+        return "Current language:" + lang + " Current date: " + strDate;
     }
 }
