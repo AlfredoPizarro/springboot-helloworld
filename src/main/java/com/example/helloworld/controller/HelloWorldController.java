@@ -17,7 +17,7 @@ public class HelloWorldController {
      Locale locale = Locale.getDefault();
      String lang = locale.getDisplayLanguage();
      LocalDateTime now = LocalDateTime.now(); 
-     String strDate = dateFormat.format(now);  
+     String strDate = DateFormat.format(now);  
         return "Current language:" + lang + " Current date: " + strDate;
     }
 }
