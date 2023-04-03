@@ -11,7 +11,6 @@ public class HelloWorldController {
 
     @GetMapping("/hello")
     public String sendGreetings() {
-       String locale = Locale.getDefault();
        String lang = locale.getDisplayLanguage();
         return lang;
     }
