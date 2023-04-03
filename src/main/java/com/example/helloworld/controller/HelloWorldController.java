@@ -19,6 +19,6 @@ public class HelloWorldController {
      Date currentDate = new Date();
      String dateToStr = DateFormat.getInstance()
                                .format(currentDate);
-        return "Current language:" + lang + " Current date: " + dateToStr;
+        return "Current language:" + lang + "====== Current date: " + dateToStr;
     }
 }
